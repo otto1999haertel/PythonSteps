@@ -81,7 +81,7 @@ print(list(tel.values()))
 print(http_error(404))
 print(http_error(400))
 
-myPoint = ()
+myPoint = Point(0, 0)
 myPoint.check_point()
 myPoint.x =0
 myPoint.y = 5
