@@ -9,7 +9,8 @@ This is a repository for learning Python and its concepts
 - No return codes but exceptions
 - Functions and modules are more important than classes
 - Classes are only used for state, identity, or polymorphism
-- Files and their functions are modules to be used
+- Files and their functions are modules to be used  
+- Folders with __init__.py file are modules
 - Modules contain functions, classes, constants, variables
 - Package = module tree:
 
