@@ -23,3 +23,14 @@ my_project/
 
 from services.email import send_mail
 ```
+The interpreter acts as a simple calculator
+```text
+(50 - 5*6) / 4
+5.0
+
+5 ** 2  # 5 squared
+25
+
+2 ** 7  # 2 to the power of 7
+128
+```
