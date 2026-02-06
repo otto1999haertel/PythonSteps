@@ -9,5 +9,5 @@ def calculate_fibonacci(n):
         print (a)
         for _ in range(2, n + 1):
             a, b = b, a + b
-            print (b)
+            print (b, end=' '   )
         return b

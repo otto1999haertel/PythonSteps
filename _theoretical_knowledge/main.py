@@ -14,7 +14,9 @@ print(test[5]) # position 5 (included)
 print(test[1:5]) # postiion 5 (excluded)
 
 squares = [1, 4, 9, 16, 25]
-
+for square in squares:
+    print(square, end=' ')
+print()  # New line
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 print(letters) 
@@ -25,9 +27,11 @@ a,b,c = 1,2,3
 print(a,b,c)
 
 calculate_fibonacci(10)
+print()
 
 for i in range(5):
-    print(i)
+    print(i, end=' ')
+print()  # New line
 
 squares = []
 for x in range(1,10):
