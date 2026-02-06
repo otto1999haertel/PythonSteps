@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "log_analyzer"
+version = "0.1.0"
+description = "A Python Log Analyzer Learning Project"
+authors = [
+    { name = "Dein Name" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+where = ["src"]
