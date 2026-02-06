@@ -1,6 +1,7 @@
+from point import *
 from matrix import *
 from fibonachi import *
-from http_error import *
+from switch_example import *
 
 
 
@@ -79,3 +80,9 @@ print(list(tel.values()))
 
 print(http_error(404))
 print(http_error(400))
+
+myPoint = ()
+myPoint.check_point()
+myPoint.x =0
+myPoint.y = 5
+myPoint.check_point()

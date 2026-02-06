@@ -10,6 +10,7 @@ This is a repository for learning Python and its concepts
 - Functions and modules are more important than classes
 - Classes are only used for state, identity, or polymorphism
 - Files and their functions are modules to be used  
+- Classes are optional to encapsulate komplex structures
 - Folders with __init__.py file are modules
 - Modules contain functions, classes, constants, variables
 - Package = module tree:
