@@ -1,6 +1,7 @@
 This is a repository for learning Python and its concepts
 
-# Knowledge for me
+# Knowledge for me  
+- for beginners Python is used as a scripting language  
 - Everything is an object in Python, even functions, classes, modules, numbers  
 - No access modifiers like in C# (public/private/protected)  
 - Access is hinted via conventions but not enforced:
