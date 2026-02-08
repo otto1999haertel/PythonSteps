@@ -7,7 +7,6 @@ def creating_file_path(path):
     return base_dir / path
 
 def scanFiles(startDirectory, TotalLines, ScannedFiles, counter):
-    print("Scaning files...")
     TotalLines=TotalLines
     ScannedFiles = ScannedFiles
     startDirectory=creating_file_path(startDirectory)
