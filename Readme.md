@@ -15,6 +15,7 @@ This is a repository for learning Python and its concepts
 - Modules contain functions, classes, constants, variables  
 - creating projects via 'uv init'
 - running projects then via 'uv run' 
+- local porjects with main.py and then modules to be used
 - Package = module tree:
 
 ```text
