@@ -12,7 +12,9 @@ This is a repository for learning Python and its concepts
 - Files and their functions are modules to be used  
 - Classes are optional to encapsulate komplex structures
 - Folders with __init__.py file are modules
-- Modules contain functions, classes, constants, variables
+- Modules contain functions, classes, constants, variables  
+- creating projects via 'uv init'
+- running projects then via 'uv run' 
 - Package = module tree:
 
 ```text
