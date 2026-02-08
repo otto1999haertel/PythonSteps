@@ -13,7 +13,8 @@ def scanFiles(startDirectory, TotalLines, ScannedFiles, counter):
     startDirectory=creating_file_path(startDirectory)
     for path, subdirs, files in os.walk(startDirectory):
         for file in files:
-            with open(os.path.join(startDirectory,file), "r") as auto:
+            if(Path(file).suffix==".txt"):
+               with open(os.path.join(startDirectory,file), "r") as auto:
                 for line in auto:
                     for word in line.split():
                         counter[word]+=1
