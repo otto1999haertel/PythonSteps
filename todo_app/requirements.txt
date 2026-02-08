@@ -1,0 +1,73 @@
+TODO-Listen-App (CLI) - Requirements
+
+BASIS-FUNKTIONEN:
+- Aufgabe hinzufügen: python todo.py add "Aufgabentext"
+- Alle Aufgaben anzeigen: python todo.py list
+- Aufgabe als erledigt markieren: python todo.py done <ID>
+- Aufgabe löschen: python todo.py delete <ID>
+- Daten persistent in JSON-Datei speichern
+
+ERWEITERUNGEN (optional):
+- Prioritäten (Hoch, Mittel, Niedrig)
+- Fälligkeitsdaten (--due YYYY-MM-DD)
+- Kategorien/Tags (z.B. "Arbeit", "Privat")
+- Suchen/Filtern nach Status oder Kategorie
+- Aufgaben bearbeiten
+
+TECHNISCHE ANFORDERUNGEN:
+- argparse für Command-Line-Interface
+- json Modul für Datenspeicherung
+- Fehlerbehandlung (fehlende Datei, ungültige IDs, etc.)
+- Saubere Code-Struktur mit Funktionen
+
+DATENSPEICHERUNG:
+Dateiname: todos.json (im gleichen Verzeichnis wie das Script)
+
+JSON-Struktur:
+[
+  {
+    "id": 1,
+    "text": "Einkaufen gehen",
+    "done": false,
+    "created": "2026-02-08"
+  },
+  {
+    "id": 2,
+    "text": "Python lernen",
+    "done": true,
+    "created": "2026-02-07"
+  }
+]
+
+Funktionen für Datei-Handling:
+- load_todos(): Liest JSON-Datei, gibt Liste zurück (leere Liste wenn Datei nicht existiert)
+- save_todos(todos): Schreibt Liste als JSON in Datei
+- Bei jedem Befehl: Datei laden → Änderung durchführen → Datei speichern
+
+Fehlerbehandlung:
+- FileNotFoundError beim ersten Start abfangen (leere Liste erstellen)
+- json.JSONDecodeError wenn Datei korrupt ist
+- Prüfen ob ID existiert bei done/delete
+
+ARGPARSE ANFORDERUNGEN:
+
+Subcommands (Subparser):
+- add: Benötigt einen Text-Parameter (positional)
+  Beispiel: python todo.py add "Neue Aufgabe"
+  
+- list: Keine zusätzlichen Parameter
+  Beispiel: python todo.py list
+  
+- done: Benötigt eine ID (positional, Integer)
+  Beispiel: python todo.py done 1
+  
+- delete: Benötigt eine ID (positional, Integer)
+  Beispiel: python todo.py delete 1
+
+Hilfe-Funktionalität:
+- python todo.py --help (zeigt alle Commands)
+- python todo.py add --help (zeigt Hilfe für add)
+
+Optionale Erweiterung:
+- list --filter [all|done|open] (Standardwert: all)
+  Beispiel: python todo.py list --filter open
