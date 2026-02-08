@@ -38,4 +38,5 @@ The interpreter acts as a simple calculator
 
 2 ** 7  # 2 to the power of 7
 128
-```
+```  
+- Passing arguments to script: python main.py data/ --top 10
