@@ -1,0 +1,3 @@
+Python is fun
+C# is structured
+Python is readable
