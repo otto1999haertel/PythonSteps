@@ -39,4 +39,9 @@ The interpreter acts as a simple calculator
 2 ** 7  # 2 to the power of 7
 128
 ```  
-- Passing arguments to script: python main.py data/ --top 10
+- Creating a min.py should have a main function:  
+```text
+if __name__ == "__main__":
+    doStuff()
+```
+- Passing arguments to script: python main.py [Command]
