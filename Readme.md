@@ -44,4 +44,16 @@ The interpreter acts as a simple calculator
 if __name__ == "__main__":
     doStuff()
 ```
-- Passing arguments to script: python main.py [Command]
+- Passing arguments to script: python main.py [Command]  
+
+# Extended topics
+- DataFrames in memory DB integrated in Pandas Library  
+- Queryable with filters based on dataframes: df[df['year'] == 2026]  
+- Set values:  
+-- mask = df['date'] == '2026-02-03'  
+-- df.loc[mask, 'temp_c'] = 5.0  
+- export Dataframes:  
+-- excel  
+-- csv  
+- StreamLit: Web App ohne HTML/ CSS  
+- based on DataFrames  
