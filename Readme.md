@@ -3,7 +3,9 @@ This is a repository for learning Python and its concepts
 # Knowledge for me  
 - for beginners Python is used as a scripting language  
 - local porjects with main.py and then modules to be used
-- Everything is an object in Python, even functions, classes, modules, numbers  
+- Everything is an object in Python, even functions, classes, modules, numbers 
+- functions allow multiple return values: return mean, median, std  
+- string formatierung: f"Test {varible}"
 - No access modifiers like in C# (public/private/protected)  
 - Access is hinted via conventions but not enforced:
   - _name => internal / protected by convention
