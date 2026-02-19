@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 import datetime
+import json
 from json import JSONEncoder
 
 @dataclass
@@ -15,9 +16,14 @@ class Contact():
         self.first_name = first_name
         self.last_name = last_name
 
+
 @dataclass
 class Address():
     street:str
     house_number : str
     place:str
     plz:str
+
+class EncodeContact(JSONEncoder):
+    def default(self, o):
+        return o.__dict__
