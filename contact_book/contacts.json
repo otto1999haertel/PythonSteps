@@ -1,4 +1,14 @@
-{
-    "first_name": "Franz",
-    "last_name": "Haertel"
-}
+[
+    {
+        "first_name": "Max",
+        "last_name": "Mustermann"
+    },
+    {
+        "first_name": "Stefanie",
+        "last_name": "Müller"
+    },
+    {
+        "first_name": "OK",
+        "last_name": "OK"
+    }
+]
