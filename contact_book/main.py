@@ -19,8 +19,9 @@ def _loading_contacts(file_name):
         string = file_data.read()
         print(string)
         com_num = json.loads(string, object_hook=_as_complex)
+        contact.append(com_num)
         file_data.close()
-    return []
+    return contact
 
 def _create_contact():
     first_name = input("Vorname ")
