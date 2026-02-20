@@ -7,9 +7,7 @@ This is a repository for learning Python and its concepts
 - functions allow multiple return values: return mean, median, std  
 - string formatierung: f"Test {varible}"
 - No access modifiers like in C# (public/private/protected)  
-- Access is hinted via conventions but not enforced:
-  - _name => internal / protected by convention
-  - __name => private-ish (Name Mangling for inheritance, no real access restriction)
+- Access is hinted via conventions but not enforced
 - No return codes but exceptions
 - Functions and modules are more important than classes
 - Classes are only used for state, identity, or polymorphism
@@ -47,6 +45,13 @@ if __name__ == "__main__":
     doStuff()
 ```
 - Passing arguments to script: python main.py [Command]  
+
+# Naming conventions  
+- Variables & functions => snake_case  
+- Calses => PascalCase  
+- Constants => BIG_SNAKE_CASE  
+- Private => _private_func() / _private_variable  
+- Dunder => \_\_main\_\_ => reserved for Python internal methods
 
 # Extended topics
 - DataFrames in memory DB integrated in Pandas Library  
