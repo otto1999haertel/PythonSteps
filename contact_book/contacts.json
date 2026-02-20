@@ -5,10 +5,14 @@
     },
     {
         "first_name": "Stefanie",
-        "last_name": "Müller"
+        "last_name": "M\u00fcller"
     },
     {
         "first_name": "OK",
         "last_name": "OK"
+    },
+    {
+        "first_name": "Otto",
+        "last_name": "Haertel"
     }
 ]

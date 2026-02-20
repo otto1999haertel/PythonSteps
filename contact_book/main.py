@@ -22,7 +22,7 @@ def _loading_contacts(file_name):
     contact = []
     with open(file_name, "r") as file_data:
         string = file_data.read()
-        print(string)
+        #print(string)
         com_num = json.loads(string, object_hook=contact_hook)
         contact.extend(com_num)
         file_data.close()
@@ -37,9 +37,13 @@ def _create_contact():
 def _print_contacts(contacts):
     for contact in contacts:
         print(contact.first_name +" "+ contact.last_name)
+
+def _delete_contact(first_name, last_name):
+    for contact in contacts:
+        if(contact.first_name == first_name and contact.last_name == last_name):
+            contacts.remove()
     
 def _write_to_file(file_name, contacts):
-
     # komplette Liste zurückschreiben
     with open(file_name, "w") as file:
         json.dump(contacts, file, indent=4, cls=EncodeContact)
@@ -70,8 +74,9 @@ if __name__== "__main__":
             case "create_con":
                 print("Create a new contact")
                 contact = _create_contact()
-                contacts.append(contact)
-                _write_to_file(file_path, contacts)
+                if(any(contact.first_name == item.first_name and contact.last_name == item.last_name for item in contacts)==False):
+                    contacts.append(contact)
+                    _write_to_file(file_path, contacts)
             case ("print_con"):
                 print("All contacts")
                 _print_contacts(contacts)
