@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
 # Naming conventions  
 - Variables & functions => snake_case  
-- Calses => PascalCase  
+- Classes => PascalCase  
 - Constants => BIG_SNAKE_CASE  
 - Private => _private_func() / _private_variable  
 - Dunder => \_\_main\_\_ => reserved for Python internal methods
